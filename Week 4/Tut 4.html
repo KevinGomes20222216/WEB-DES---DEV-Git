@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            h1{
+                text-align: center;
+            }
+            .num input[type="number"]{
+                width:200px;
+                margin-left: 18px;
+            }
+            legend  {
+                background-color: rgba(217, 217, 217, 0.693);
+            }
+            fieldset {
+                border-radius : 20px;
+            }
+
+            .field1 {
+                background-color : rgb(168, 168, 199);
+            }
+
+            .field2{
+                background-color : rgb(245, 195, 203);
+            }
+
+            .field3{
+                background-color : rgb(85, 41, 5);
+            }
+
+            .buttons{
+                text-align : right;
+            }
+
+            #button1,#button2 {
+                background-color: rgb(118, 118, 175);
+                border-radius: 7px;
+                width : 70px;
+                height: 35px;
+                position : relative;
+                right: 20px;
+            }
+            
+
+            .form-group1 input{
+                margin-left: 55px;
+            }
+
+            .form-group2 input{
+                margin-left:66px;
+            }
+
+            .form-group3 input{
+                margin-left: 32px;
+            }
+
+            .form-group4 input{
+                margin-left: 12px;
+            }
+
+            .form-group5 input{
+                margin-left: 40px;
+            }
+
+            .form-group6 input{
+                margin-left: 45px;
+            }
+
+            .form-group7 input {
+                margin-left: 40px;
+            }
+
+            .form-group8 input{
+                margin-left: 55px;
+            }
+
+            .form-group9 select {
+                margin-left: 65px;
+            }
+
+            .form-group10 label {
+                display: flex;
+                
+            }
+            .form-group10 textarea {
+                display: flex;
+                margin-top: -30px;
+                margin-left: 132px;
+            }
+
+            
+        </style>
+    </head> 
+
+<body>
+    <h1> Hotel Reservation</h1>
+    <fieldset class="field1">
+        <legend><b>Personal Details</b></legend>
+
+            <div class="form-group1">
+            <label for="name">First name: </label>
+            <input type ="text" name="name" id="name" placeholder="Enter your first name">
+            </div>
+            <br>
+
+            <div class="form-group2">
+            <label for="surname">Surname:  </label>
+            <input type ="text" name="surname" id="surname" placeholder="Enter your surname">
+            </div>
+            <br>
+
+            <div class="form-group3">
+            <label for="email"> Email address: </label>
+            <input type="email" name="email" id="email">
+            </div>
+            <br>
+
+            <div class="form-group4">
+            <label for="pass"> Setup a password: </label>
+            <input type ="password" name="password" id="password" min="8" size="50" placeholder="min 8 characters, use at least 1 caps, no special characters">
+            </div>
+        
+    </fieldset>
+    <br>
+
+    <fieldset class="field2">
+        <legend><b>Booking Details</b></legend>
+
+        <div class="form-group5">
+            <label for="date">CheckIn day: </label>
+            <input type="date" name ="date" id="date" value="14/02/2023">
+        </div>
+
+            <br>
+        
+        <div class="num">
+            <label for="days">Numbers of days</label>
+            <input type="number" name="days" id="days" min="1" max="31">
+        </div>
+        <br><br>
+
+        <div class="form-group6">
+            <label for="single"> Single Room</label>
+            <input type="radio" name="Room" id="single">
+        </div>
+            <br><br>
+
+        <div class="form-group7">
+            <label for="double">Double Room</label>
+            <input type="radio" name="Room" id="double">
+        </div>
+            <br><br>
+
+        <div class="form-group8">
+            <label for="King">King Room</label>
+            <input type="radio" name="Room" id="King">
+        </div>
+            <br><br>
+
+        <div class="form-group9">
+            <label for="break">Breakfast: </label>
+            <select id="break">
+                <option value="include"name="breakfast">include</option>
+                <option value="Dont include" name="breakfast">Dont include</option>
+            </select>
+        </div>
+            <br><br>
+
+        <div class="form-group10">
+            <label for="area">Special<br> Requirements : </label>
+            <textarea id="area" name="requirements" rows="5" cols="20" placeholder="Please provide any special requrements"></textarea>
+        </div>
+
+            <br>
+        
+    </fieldset>
+    <br>
+
+    <fieldset class="field3">
+        <div class="buttons">
+            <input type="submit"  id="button1" value="Send">
+            <input type="Reset" id="button2" value="Reset">
+        </div>
+    </fieldset>
+    </form>
+
+</body>
+</html>

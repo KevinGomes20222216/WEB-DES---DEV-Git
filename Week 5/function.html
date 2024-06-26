@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript demo</title>
+</head>
+<body>
+    <title>
+        var vs let
+    </title>
+
+    <script>
+        function exampleFunction(){
+            if (true) {
+                var functionScopedVariable = "Im inside an if block";
+                console.log(functionScopedVariable);
+            }
+
+            console.log(functionScopedVariable);
+        }
+        //console.log(functionScopedVariable);
+
+        exampleFunction();
+    </script>
+</body>
+</html>

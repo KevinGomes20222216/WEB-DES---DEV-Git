@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prompt</title>
+
+</head>
+
+<body onLoad="document.myform.userid.focus()">
+
+<form name="myForm" onSubmit="return prompts(this)" onReset="cancel()">
+Userid: <input type="text" name="userid">
+<br>
+Password: <input type="password" name="password">
+<br>
+<input type="submit" value="  ok  "> <input type="reset" value="  cancel  ">
+</form>
+<script src="Prompt.js"></script>
+</body>
+
+</html>
